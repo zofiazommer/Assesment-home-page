@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelog</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+<body>
+    <h1 style="color:navy; text-align: center; font-family: Comic Sans MS; font-size: 300%; background-color: #a4c2f4ff;">TRAVELOG</h1>
+</body>
+
+<!--This is now the beginning of the code for the navigation bar and search bar-->
+
+</head>
+<body>
+    <div class="navbar">
+    <div class="search-container">
+         <form action="/submit-answer" method="GET">
+            <input type="text" name="query" placeholder="More locations..." required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!--Using Java script to make is fully functional. I have used AI to help me generate this.-->
+    <script>
+        function handleSearch(event){
+            event.preventDefault();
+            const query = documnet.getElementById("searchInput").value.toLowerCase();
+        }
+        const pages = {
+            "hong kong": "file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Hong%20Kong%20page/index.html",
+            "macau": "file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Macau%20page/index.html",
+            "new zeland": "file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/New%20Zealand%20page/index.html",
+            "rome": "file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Rome%20(Italy)%20page/index.html",
+            "madrid": "file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Madrid%20(Spain)%20page/index.html",
+            "moscow": "file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Moscow%20(Russia)%20page/index.html",
+        };
+
+        if (pages[query]) {
+            window.location.href = pages[query];
+        } else {
+            alert("Location not found. Pleace try again!");
+        }
+    </script>
+    <div class="nav-links">
+        <a href="#help">Help</a>
+        <a href="#about">About</a>
+        <a href="#travelling">About Travelling</a>
+        <a href="#me">About me</a>
+        <a href="#contact">Contact</a>
+    </div>
+    </div> 
+</body>
+
+<!--Now im going to add an image and information-->
+<body>
+    <img src="https://as1.ftcdn.net/v2/jpg/03/53/98/18/1000_F_353981801_d3mnHqpZoPtY3fs7RLSLpdT62cyrcHV5.jpg" alt="Travel to france panorama view famous landmarks of the world. Stock Vector  | Adobe Stock" width="1365" height="500"/>
+</body>
+
+<!--Now the inforation-->
+<body>
+    <div class="container">
+        <div class="box i">
+            <h1>What is this website about?</h1>
+            <p>I'm a travel blogger and a social media influencer. My passion is to travel around the world to different countries, cities and document everything. <br> I made this website to help people who also want to begin exploring the adventurous world. This page gives information and advice on how to begin your next trip of enjoying Earth.</p>
+        </div>
+        <div class="box">
+            <h1>WARNING!</h1>
+            <ul>
+                <li>Many countries might be expensive so make sure to haev saved up enough money</li>
+                <li>There is scammers and beggars in some areas</li>
+                <li>Watch out for pocket pickers</li>
+                <li>Make sure to bring company</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<!--This is now the area that is going to link to the locations-->
+<body>
+    <h3 style="color:navy; text-align: center;">Visit the top best locations below:</h3>
+    <ul style="text-align:center; margin-left: 600px; margin-right: 550px;color:navy; font-size: 115%">
+        <li><a href="file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Hong%20Kong%20page/index.html">Hong Kong</a></li>
+        <li><a href="file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Macau%20page/index.html">Macau</a></li>
+        <li><a href="file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/New%20Zealand%20page/index.html">New Zealand</a></li>
+        <li><a href="file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Rome%20(Italy)%20page/index.html">Rome (Italy)</a></li>
+        <li><a href="file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Madrid%20(Spain)%20page/index.html">Madrid (Spain)</a></li>
+        <li><a href="file:///home/chronos/u-c8ae6665dcfe99e74a370cea77b777f59bfd053b/MyFiles/Downloads/Moscow%20(Russia)%20page/index.html">Moscow (Russia)</a></li>
+    </ul>
+<br>
+<br>
+<br>
+</body>
+
+<!--This is where I begin my bottom navigation bar for which I used AI-->
+
+<body>
+    <div class="bottom-nav">
+        <a href="#home"><i class="fas fa-home"></i>Home</a>
+        <a href="#search"><i class="fas fa-search"></i>Search</a>
+        <a href="#profile"><i class="fas fa-user"></i>Profile</a>
+        <a href="#settings"><i class="fas fa-cog"></i>Settings</a>
+    </div>
+</body>
+</html>
